@@ -1,15 +1,131 @@
 body {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    background-color: #eef5ef;
+    color: #18372f;
     font-family: Arial, sans-serif;
-    margin: 20px;
+    line-height: 1.6;
 }
 
-table, th, td {
-    border: 1px solid black;
+h1 {
+    padding-bottom: 12px;
+    border-bottom: 3px solid #d94f3d;
+    color: #18372f;
+    font-size: 32px;
+}
+
+h2 {
+    margin-top: 28px;
+    color: #27766a;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 24px;
     border-collapse: collapse;
+    background-color: white;
 }
 
-th, td {
-    padding: 6px;
+th,
+td {
+    padding: 12px;
+    border: 1px solid #d4e0d5;
+    text-align: left;
 }
 
-/* Boleh ya kalo mau CSS nya dibuat cantik hehehe */
+th {
+    background-color: #18372f;
+    color: white;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #d4e0d5;
+    border-radius: 6px;
+    background-color: white;
+}
+
+form p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 16px;
+}
+
+label {
+    width: 150px;
+    font-weight: bold;
+}
+
+input,
+select {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #bdcfc0;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #27766a;
+}
+
+button {
+    padding: 11px 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #d94f3d;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #b93d30;
+}
+
+body > p {
+    padding: 10px 0;
+    border-bottom: 1px solid #d4e0d5;
+}
+
+strong {
+    color: #b93d30;
+}
+
+ol {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #27766a;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 14px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    form p {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    label {
+        width: auto;
+    }
+}
